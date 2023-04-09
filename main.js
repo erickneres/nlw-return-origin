@@ -9,6 +9,7 @@ function onScroll() {
   activateMenuAtCurrentSection(home);
   activateMenuAtCurrentSection(services);
   activateMenuAtCurrentSection(about);
+  activateMenuAtCurrentSection(contact);
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -35,6 +36,8 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
+  const navigation = document.querySelector('#navigation');
+
   if (scrollY > 0) {
     navigation.classList.add('scroll')
   } else {
